@@ -1,0 +1,17 @@
+body{
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.5;
+  padding: 2.5em 1em;
+  background-color:#e55039 ;
+  font-family: 'roboto', sans-serif;
+color: #3c6382;
+}
+a:hover{
+  color:#f6b93b;
+  font-size: 17.5px
+}
+a{
+color: #3c6382
+
+}
