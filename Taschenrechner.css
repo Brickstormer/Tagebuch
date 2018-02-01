@@ -1,0 +1,104 @@
+h1{
+  margin-left: 400px;
+  font-size: 20px
+
+}
+body{
+  background-color: #fff
+}
+p{
+  color: #fff;
+}
+#Körper{
+background-color: #262424e6;
+font-weight: bold;
+padding:10px;
+border: 2px solid #5D6063;
+border-radius: 40px;
+width: 300px;
+height: 550px;
+margin-left: 400px;
+}
+#Eingabeflächeaußen{
+  background-color: #79baad4d;
+  border: 4px solid #b3acac;
+  border-radius: 0px;
+  height: 90px;
+}
+
+#Eingabeflächeinnen{
+  background-color: #26ba9cb3;
+  border: 4px solid #000;
+  border-radius: 10px;
+  width: 200px;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 42px;
+  text-align: left center;
+  line-height: 0.5
+}
+table{
+ color: #000;
+ margin-top: 80px;
+ margin-left: 15px;
+ line-height: 1.5;
+ font-size: 30px;
+
+
+}
+.Knöpfeoben{
+  background-color: #218c74;
+  color:#fff;
+  border-radius: 40px;
+  text-align: center;
+}
+.Knöpfezahl{
+background-color: #000;
+color: #fff;
+border-radius: 40px;
+text-align: center;
+}
+
+.Knöpfelinks{
+  background-color: #502a1a;
+  color: #fff;
+  border-radius: 40px;
+  text-align: center;
+  }
+
+  .Knöpfe{
+    background-color: #cc8e35;
+    color: #fff;
+    border-radius: 40px;
+    text-align: center;
+  }
+
+th{
+width:300px;
+
+}
+td{
+  width:50px
+}
+#An{
+background-color: #3ae374;
+height: 10px;
+width:10px;
+border-radius: 10px;
+margin-top:
+}
+#leuchten{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 7px
+}
+#Aus{
+  background-color: #ff3838;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  margin-left: 7px
+}
+#ergebnis{
+   text-align: right ;
+}

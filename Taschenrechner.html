@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  var c = "";
+
+  function ubergabe(b){
+    if (b == '='){
+        d=eval(c)
+        console.log(d)
+        document.getElementById("ergebniss").innerHTML = d;
+    } else {
+      c = c + b
+      console.log(c)
+      document.getElementById("Rechenweg").innerHTML = c;
+    }
+
+   }
+
+   function loeschen(){
+   c = '';
+   document.getElementById('ergebniss').innerHTML ='';
+   document.getElementById('Rechenweg').innerHTML ='';
+   }
+  </script>
+<link rel="stylesheet" href="Taschenrechner.css"/>
+<meta charset="utf-8"/>
+<title>
+  Taschenrechner
+</title>
+</head>
+<body>
+  <div id="Körper">
+    <p>
+      BrAun
+    </p>
+  <div id="Eingabeflächeaußen">
+    <div id="Eingabeflächeinnen">
+      <p id="Rechenweg"></p>
+      <p id="ergebniss"></p>
+    </div>
+  </div>
+<table id="leuchten">
+  <tr>
+    <td> <div id="An"></div></td>
+    <td> <div id="Aus"></div></td>
+  </tr>
+<table>
+<tr>
+    <td><div onclick="ubergabe('M+')" class="Knöpfeoben">M+</div></td>
+    <td><div class="Knöpfeoben">M-</div></td>
+    <td><div class="Knöpfeoben">MR</div></td>
+    <td><div class="Knöpfeoben">MC</div></td>
+    <td><div class="Knöpfeoben">+/-</div></td>
+  </tr>
+  <tr>
+    <td><div class="Knöpfelinks">▲</div></td>
+    <td><div onclick="ubergabe('7')"class="Knöpfezahl">7</div></td>
+    <td><div onclick="ubergabe('8')"class="Knöpfezahl">8</div></td>
+    <td><div onclick="ubergabe('9')"class="Knöpfezahl">9</div></td>
+    <td><div onclick="ubergabe('/')"class="Knöpfelinks">/</div></td>
+  </tr>
+  <tr>
+    <td><div class="Knöpfelinks">√</div></td>
+    <td><div onclick="ubergabe('4')" class="Knöpfezahl">4</div></td>
+    <td><div onclick="ubergabe('5')" class="Knöpfezahl">5</div></td>
+    <td><div onclick="ubergabe('6')" class="Knöpfezahl">6</div></td>
+    <td><div onclick="ubergabe('*')"class="Knöpfelinks">*</div></td>
+  </tr>
+  <tr>
+    <td><div onclick="ubergabe('')" class="Knöpfelinks">%</div></td>
+    <td><div onclick="ubergabe('1')" class="Knöpfezahl">1</div></td>
+    <td><div onclick="ubergabe('2')" class="Knöpfezahl">2</div></td>
+    <td><div onclick="ubergabe('3')" class="Knöpfezahl">3</div></td>
+    <td><div onclick="ubergabe('-')" class="Knöpfelinks">-</div></td>
+  </tr>
+  <tr>
+    <td><div onclick="loeschen()" class="Knöpfelinks">CR</div></td>
+    <td><div onclick="ubergabe('0')" class="Knöpfezahl">0</div></td>
+    <td><div onclick="ubergabe('.')" class="Knöpfelinks">.</div></td>
+    <td><div onclick="ubergabe('=')" class="Knöpfe">=</div></td>
+    <td><div onclick="ubergabe('+')" class="Knöpfelinks">+</div></td>
+  </tr>
+</table>
+
+  </div>
+
+
+  <h1>
+  </h1>
+</body>
+</html>
