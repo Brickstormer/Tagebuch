@@ -1,0 +1,9 @@
+body{
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.5;
+  padding: 2.5em 1em;
+  background-color:#545c9f80;
+   font-family: 'Roboto', sans-serif;
+   font-size: 10px
+ }
