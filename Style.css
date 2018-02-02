@@ -3,13 +3,14 @@
 }*/
 
 body{
-  margin: 0 auto;
+/*  margin: 0 auto;
   max-width: 600px;
   line-height: 1.5;
-  padding: 2.5em 1em;
+  padding: 2.5em 1em;*/
+    font-family: 'Indie Flower', cursive;
 }
 
-body{
+/*body{
   background-color:#4757e9;
 }
 

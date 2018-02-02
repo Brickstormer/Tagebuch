@@ -39,7 +39,7 @@ margin-left: 400px;
 }
 table{
  color: #000;
- margin-top: 80px;
+ margin-top: 40px;
  margin-left: 15px;
  line-height: 1.5;
  font-size: 30px;
@@ -101,4 +101,7 @@ margin-top:
 }
 #ergebnis{
    text-align: right ;
+}
+a{
+  color: #fff
 }
