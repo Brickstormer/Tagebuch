@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+  <title>
+    Osterberechnung
+  </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Oster.css"/>
+<script>
+  function myInput(){
+    var jahr = document.getElementById('Jahr').innerHTML
+    var x = berechnung(jahr)
+    console.log(jahr)
+    console.log(x)
+    document.getElementById('lol').innerHTML = x
+  }
+
+  function berechnung (jahr){
+    // jahr = parseInt(jahr)
+    var  a = jahr % 19
+    console.log(a)
+    var  b = jahr % 4
+    console.log(b)
+    var  c = jahr % 7
+    console.log(c)
+    var  k = jahr / 100
+    console.log("k")
+    var  p = k / 3
+    console.log(p)
+    var  q = k / 4
+    var  m = ( 15 + k - p - q) % 30
+    var  d = (19*a + m) % 30
+    var  n = (4 + k - q) % 7
+    var  e = (2*b + 4*c + 6*d + n) % 7
+    var  ostern = (22 + d + e)
+    console.log(ostern)
+    return ostern;
+  }
+</script>
+<body>
+  <form>
+	 <label for="Jahr"> Jahr:
+  <input id="Jahr" type="number" min="2000" max="3000" step="1" value="2018">
+   </label>
+ <button type="button" onclick="myInput()">Los geht's</button>
+  </form>
+  <div id="lol"></div>
+</body>
+</html>

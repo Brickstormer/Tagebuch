@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Meine Karte
+  </title>
+  <meta charset="utf-8"/>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<div style="width:600px;height:500px" id="gmeg_map_canvas">
+</div>
+<p>Karte von Meinem Arbeitsplatz</p>
+
+<script>
+var gmegMap, gmegMarker, gmegInfoWindow, gmegLatLng;
+function gmegInitializeMap(){
+  gmegLatLng = new google.maps.LatLng(53.866598,10.68598);gmegMap = new google.maps.Map(document.getElementById("gmeg_map_canvas"),{zoom:18,center:gmegLatLng,mapTypeId:google.maps.MapTypeId.ROADMAP});gmegMarker = new google.maps.Marker({map:gmegMap,position:gmegLatLng});gmegInfoWindow = new google.maps.InfoWindow({content:'<b></b><br>Hüxstraße 1<br>23554'});gmegInfoWindow.open(gmegMap,gmegMarker);}google.maps.event.addDomListener(window,"load",gmegInitializeMap);
+</script>
+</head>
+</html>
